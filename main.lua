@@ -23,8 +23,8 @@ levels[levelIndex][objectIndex]
 How to declare on object
 
 object1 			= display.newImage("example.png")
-object1.objectIndex = 2				(the index of properties in table levels{}  )	
-object1.levelIndex	= 1   			(by default it will be 1 for all objects)   
+object1.objectIndex 		= 2				(the index of properties in table levels{}  )	
+object1.levelIndex		= 1   			(by default it will be 1 for all objects)   
 object1.x			= levels[levelIndex][objectIndex].x 
 object1.y			= levels[levelIndex][objectIndex].y 
 
@@ -42,8 +42,8 @@ local function levelGenerator(self,event)
 		if self.x <  -30  then
 		
 		self.levelIndex = self.levelIndex + 1
-		self.x = levels[levelIndex][objectIndex].x
-		self.y = levels[levelIndex][objectIndex].y
+		self.x = levels[levelIndex][objectIndex].x + 480
+		self.y = levels[levelIndex][objectIndex].y 
         		
 	else 
 		self.x = self.x - speed
