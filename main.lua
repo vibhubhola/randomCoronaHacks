@@ -42,6 +42,8 @@ local function levelGenerator(self,event)
 		if self.x <  -30  then
 		
 		self.levelIndex = self.levelIndex + 1
+		local levelIndex = self.levelIndex
+		
 		self.x = levels[levelIndex][objectIndex].x + 480
 		self.y = levels[levelIndex][objectIndex].y 
         		
